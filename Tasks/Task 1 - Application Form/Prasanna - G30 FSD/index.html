@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Application Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Internship Application Form</h1>
+  <form>
+
+    <!-- ================= SECTION 1: PERSONAL DETAILS ================= -->
+    <h2 class="section-title">1. Personal Details</h2>
+
+    <div class="row">
+      <div class="col">
+        <label>Full Name:</label>
+        <input type="text" placeholder="Enter your full name" required>
+      </div>
+      <div class="col">
+        <label>Date of Birth:</label>
+        <input type="date" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label>Gender:</label>
+        <div class="inline-options">
+          <label><input type="radio" name="gender" value="Male"> Male</label>
+          <label><input type="radio" name="gender" value="Female"> Female</label>
+          <label><input type="radio" name="gender" value="Other"> Other</label>
+        </div>
+      </div>
+      <div class="col">
+        <label>Marital Status:</label>
+        <div class="inline-options">
+          <label><input type="radio" name="marital" value="Single"> Single</label>
+          <label><input type="radio" name="marital" value="Married"> Married</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label>Email:</label>
+        <input type="email" placeholder="example@mail.com" required>
+      </div>
+      <div class="col">
+        <label>Phone:</label>
+        <input type="tel" placeholder="+91 9876543210" required>
+      </div>
+    </div>
+
+    <label>Address:</label>
+    <textarea rows="2" placeholder="Enter your permanent address"></textarea>
+
+    <div class="row">
+      <div class="col">
+        <label>LinkedIn Profile:</label>
+        <input type="url" placeholder="https://linkedin.com/in/yourname">
+      </div>
+      <div class="col">
+        <label>Upload Photo:</label>
+        <input type="file" accept="image/*">
+      </div>
+    </div>
+
+    <!-- ================= SECTION 2: ACADEMIC BACKGROUND ================= -->
+    <h2 class="section-title">2. Academic Background</h2>
+    <p>List your educational qualifications below:</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Institution Name</th>
+          <th>Degree</th>
+          <th>Major</th>
+          <th>Graduation Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" placeholder="e.g., ABC University"></td>
+          <td><input type="text" placeholder="e.g., B.Tech"></td>
+          <td><input type="text" placeholder="e.g., Computer Science"></td>
+          <td><input type="month"></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="e.g., XYZ College"></td>
+          <td><input type="text" placeholder="e.g., Diploma"></td>
+          <td><input type="text" placeholder="e.g., IT"></td>
+          <td><input type="month"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <label>Academic Achievements:</label>
+    <textarea rows="2" placeholder="Mention any awards or honors received"></textarea>
+
+    <!-- ================= SECTION 3: PROFESSIONAL EXPERIENCE ================= -->
+    <h2 class="section-title">3. Professional Experience</h2>
+
+    <p>Provide details of internships or part-time jobs (if any):</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Organization</th>
+          <th>Position</th>
+          <th>Duration</th>
+          <th>Responsibilities</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" placeholder="e.g., TechCorp Pvt. Ltd."></td>
+          <td><input type="text" placeholder="e.g., Intern Developer"></td>
+          <td><input type="text" placeholder="e.g., 3 Months"></td>
+          <td><input type="text" placeholder="e.g., Assisted in website design"></td>
+        </tr>
+        <tr>
+          <td><input type="text" placeholder="e.g., Startup Hub"></td>
+          <td><input type="text" placeholder="e.g., Marketing Assistant"></td>
+          <td><input type="text" placeholder="e.g., 2 Months"></td>
+          <td><input type="text" placeholder="e.g., Social media management"></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <label>Upload Resume:</label>
+    <input type="file" accept=".pdf,.doc,.docx">
+
+    <!-- ================= SECTION 4: SKILLS ================= -->
+    <h2 class="section-title">4. Skills & Abilities</h2>
+
+    <div class="row">
+      <div class="col">
+        <label>Technical Skills:</label>
+        <textarea rows="2" placeholder="e.g., HTML, CSS, JavaScript, Python"></textarea>
+      </div>
+      <div class="col">
+        <label>Soft Skills:</label>
+        <textarea rows="2" placeholder="e.g., Teamwork, Communication, Leadership"></textarea>
+      </div>
+    </div>
+
+    <label>Proficiency Level (0–10):</label>
+    <input type="range" min="0" max="10" step="1">
+
+    <div class="row">
+      <div class="col">
+        <label>Portfolio URL:</label>
+        <input type="url" placeholder="https://github.com/username">
+      </div>
+      <div class="col">
+        <label>Preferred Interface Theme:</label>
+        <input type="color">
+      </div>
+    </div>
+
+    <!-- ================= SECTION 5: AVAILABILITY ================= -->
+    <h2 class="section-title">5. Availability & Preferences</h2>
+
+    <div class="row">
+      <div class="col">
+        <label>Available Start Date:</label>
+        <input type="date">
+      </div>
+      <div class="col">
+        <label>Preferred Mode:</label>
+        <select>
+          <option>Online</option>
+          <option>Offline</option>
+          <option>Hybrid</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <label>Working Hours (per week):</label>
+        <input type="number" min="5" max="60">
+      </div>
+      <div class="col">
+        <label>Willing to Relocate:</label>
+        <input type="checkbox"> Yes
+      </div>
+    </div>
+
+    <label>Preferred Interview Time:</label>
+    <input type="datetime-local">
+
+    <!-- ================= SECTION 6: DECLARATION ================= -->
+    <h2 class="section-title">6. Declaration</h2>
+    <p>I hereby declare that the above information is true and correct to the best of my knowledge.</p>
+
+    <div class="row">
+      <div class="col">
+        <label>Place:</label>
+        <input type="text">
+      </div>
+      <div class="col">
+        <label>Date:</label>
+        <input type="date">
+      </div>
+    </div>
+
+    <label>Signature Upload:</label>
+    <input type="file" accept="image/*">
+
+    <div class="button-group">
+      <button type="submit">Submit Application</button>
+      <button type="reset">Reset</button>
+    </div>
+
+  </form>
+</div>
+
+</body>
+</html>
