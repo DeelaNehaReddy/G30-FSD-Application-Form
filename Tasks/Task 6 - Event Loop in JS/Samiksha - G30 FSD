@@ -49,3 +49,14 @@ Promise.resolve().then(() => {
 });
 
 console.log("End");
+
+## Output
+Start
+End
+From Promise
+From Timeout
+
+## Summary
+
+JavaScript runs one operation at a time on a single thread, but it remains non-blocking because asynchronous tasks are handled by Web APIs. After all synchronous code executes, JavaScript processes microtasks such as promise callbacks, and then moves on to macrotasks like timeouts and event callbacks. The event loop manages this process, ensuring tasks move from their queues into execution in the correct order.
+
