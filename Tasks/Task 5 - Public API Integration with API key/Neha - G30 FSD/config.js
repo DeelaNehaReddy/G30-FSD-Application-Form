@@ -1,1 +1,1 @@
-const API_KEY = "18656385803980ca07b53f81f587df49";
+const API_KEY = process.env.API_KEY;
